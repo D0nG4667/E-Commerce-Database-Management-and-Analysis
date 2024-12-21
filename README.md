@@ -6,7 +6,7 @@ This is an SQL Project for E-Commerce Database Management and Analysis. The proj
 
 ## Schema Design Analysis
 
-![Schema](screenshot/er_diagram.png)
+![Schema](screenshots/er_diagram.png)
 
 The schema represents a relational database designed for managing e-commerce transactions. It emphasizes clarity, normalization, and efficient data retrieval, supporting operations related to orders, customers, products, and their relationships. Below is an overview and detailed breakdown of the schema's design principles and components optimised for transactional workflows.
 

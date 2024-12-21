@@ -55,10 +55,6 @@ INNER JOIN Order_Items oi ON o.order_id = oi.order_id     -- Join Orders and Ord
 INNER JOIN Products p ON oi.product_id = p.product_id;    -- Join Order_Items and Products
 
 
-
-
-
-
 -- 2. Window Functions:
 -- Use RANK() to rank customers based on their total spending.
 SELECT 
@@ -80,7 +76,6 @@ SELECT
     ROW_NUMBER() OVER (PARTITION BY o.customer_id ORDER BY o.order_date) AS order_number
 FROM Orders o
 ORDER BY o.customer_id, order_number;
-
 
 
 -- 3. CTEs and Subqueries:
@@ -113,7 +108,6 @@ WHERE p.price = (
     SELECT MAX(price) 
     FROM Products
 );
-
 
 
 -- 4. Indexing:
